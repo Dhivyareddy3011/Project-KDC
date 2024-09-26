@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Kidney-Disease-Classification-MLflow-DVC
 
 
@@ -178,3 +179,6 @@ DVC
  - Its very lite weight for POC only
  - lite weight expriements tracker
  - It can perform Orchestration (Creating Pipelines)
+=======
+# Project-KDC
+>>>>>>> a4a1863e498feaf12db094fd9c98a9a88362b992
