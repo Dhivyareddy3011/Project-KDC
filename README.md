@@ -25,11 +25,11 @@ https://github.com/entbappy/Kidney-Disease-Classification-MLflow-DVC
 ### STEP 01- Create a conda environment after opening the repository
 
 ```bash
-conda create -n cnncls python=3.8 -y
+conda create --name kidney python=3.8
 ```
 
 ```bash
-conda activate cnncls
+conda activate kidney
 ```
 
 
@@ -119,7 +119,7 @@ export MLFLOW_TRACKING_PASSWORD=14a5e45431f85e8d4afc7b6fbb5650b5222ef0bd
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 566373416292.dkr.ecr.us-east-1.amazonaws.com/chicken
+    - Save the URI: 566373416292.dkr.ecr.us-east-1.amazonaws.com/kidney
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
