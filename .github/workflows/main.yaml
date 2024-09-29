@@ -52,7 +52,7 @@ jobs:
         id: build-image
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY_NAME }}
+          ECR_REPOSITORY: 443370685640.dkr.ecr.us-east-1.amazonaws.com/kidney
           IMAGE_TAG: latest
         run: |
           # Build a docker container and
