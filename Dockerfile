@@ -13,7 +13,6 @@ RUN pip install --upgrade pip
 
 # Install the dependencies from requirements.txt
 RUN pip install -r requirements.txt
-docker build -t kidney
 
 
 # Command to run your app
