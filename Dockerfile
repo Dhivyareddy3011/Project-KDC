@@ -1,12 +1,18 @@
-FROM python:3.10-slim-buster
+CMD ["python3", "app.py"]
+# Use Python 3.9-slim-buster as the base image
+FROM python:3.9-slim-buster
 
-RUN apt update -y && apt install awscli -y
-RUN apt-get update && apt-get install -y git
+# Set the working directory in the container
 WORKDIR /app
 
+# Copy the current directory contents into the container
 COPY . /app
-RUN pip install -r requirements.txt
+
+# Upgrade pip to avoid version-related issues
 RUN pip install --upgrade pip
 
+# Install the dependencies from requirements.txt
+RUN pip install -r requirements.txt
 
-CMD ["python3", "app.py"]
+# Command to run your app
+CMD ["python", "app.py"]
