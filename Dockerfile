@@ -1,4 +1,4 @@
-FROM python:3.6-slim-buster
+FROM python:3.9-slim-buster
 
 RUN apt update -y && apt install awscli -y
 RUN apt-get update && apt-get install -y git
